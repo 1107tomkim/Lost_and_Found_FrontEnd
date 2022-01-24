@@ -1,10 +1,35 @@
 body {
     margin:0;
     padding: 0;
-    font-family: sans-serif;
-    background: url(Images/HolbertonSchoolMainPage.png);
+    background-image: url(Images/HolbertonSchoolMainPage.png);
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 20s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes animate{
+    0%{
+        background-image: url(Images/Holberton\ place1.jpg);
+    }20%{
+        background-image: url(Images/Holberton\ Place\ 2.jpg);
+    }40%{
+        background-image: url(Images/Holberton\ Place\ 3.png);
+    }60%{
+        background-image: url(Images/Holberton\ place\ 4.png);
+    }80%{
+        background-image: url(Images/HolbertonSchoolMainPage.png);
+    }100%{
+        background-image: url(Images/Holberton\ Place\ 6.png);
+    }
 }
 
 .box{
